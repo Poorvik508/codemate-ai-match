@@ -3,71 +3,71 @@
 @tailwind utilities;
 
 /* Codemate Design System - AI-Assisted Coding Partner Finder
-All colors MUST be HSL. Tech-focused theme with deep blues and bright accents.
+All colors MUST be HSL. Light theme with teal accents.
 */
 
 @layer base {
   :root {
-    /* Core theme colors - Deep tech blue background */
-    --background: 220 25% 8%;
-    --foreground: 210 40% 98%;
+    /* Core theme colors - Light background */
+    --background: 210 20% 98%;
+    --foreground: 222 84% 4.9%;
 
     /* Cards and surfaces */
-    --card: 220 20% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
 
     /* Popovers and overlays */
-    --popover: 220 20% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
 
-    /* Primary - Bright coding blue */
-    --primary: 210 100% 60%;
-    --primary-foreground: 220 25% 8%;
+    /* Primary - Teal */
+    --primary: 173 58% 39%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Darker card surface */
-    --secondary: 220 15% 16%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary - Light gray card surface */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 84% 4.9%;
 
     /* Muted elements */
-    --muted: 220 15% 20%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    /* Accent - Bright cyan for CTAs */
-    --accent: 180 100% 50%;
-    --accent-foreground: 220 25% 8%;
+    /* Accent - Dark teal for hover states */
+    --accent: 173 64% 31%;
+    --accent-foreground: 0 0% 100%;
 
     /* Destructive - Red for errors */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     /* Borders and inputs */
-    --border: 220 15% 25%;
-    --input: 220 15% 20%;
-    --ring: 210 100% 60%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 173 58% 39%;
 
     /* Hero gradient colors */
-    --hero-start: 220 100% 15%;
-    --hero-end: 260 100% 20%;
+    --hero-start: 173 58% 39%;
+    --hero-end: 173 64% 31%;
     
     /* Success color for positive actions */
     --success: 120 60% 50%;
-    --success-foreground: 210 40% 98%;
+    --success-foreground: 0 0% 100%;
 
     /* Warning color */
     --warning: 40 100% 60%;
-    --warning-foreground: 220 25% 8%;
+    --warning-foreground: 222 84% 4.9%;
 
     --radius: 0.75rem;
 
-    /* Sidebar colors adapted to tech theme */
-    --sidebar-background: 220 20% 12%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 210 100% 60%;
-    --sidebar-primary-foreground: 220 25% 8%;
-    --sidebar-accent: 220 15% 16%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 210 100% 60%;
+    /* Sidebar colors adapted to light theme */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 84% 4.9%;
+    --sidebar-primary: 173 58% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 84% 4.9%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 173 58% 39%;
   }
 }
 
