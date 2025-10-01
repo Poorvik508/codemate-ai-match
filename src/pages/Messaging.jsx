@@ -6,29 +6,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Send, Search, Phone, Video, MoreVertical } from "lucide-react";
 
-interface Conversation {
-  id: number;
-  name: string;
-  lastMessage: string;
-  timestamp: string;
-  isOnline: boolean;
-  unreadCount: number;
-  avatar?: string;
-}
-
-interface Message {
-  id: number;
-  content: string;
-  isSent: boolean;
-  timestamp: string;
-}
-
 const Messaging = () => {
-  const [selectedConversation, setSelectedConversation] = useState<number>(1);
+  const [selectedConversation, setSelectedConversation] = useState(1);
   const [messageInput, setMessageInput] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
 
-  const conversations: Conversation[] = [
+  const conversations = [
     {
       id: 1,
       name: "Sarah Chen",
@@ -67,7 +50,7 @@ const Messaging = () => {
     }
   ];
 
-  const messages: Message[] = [
+  const messages = [
     {
       id: 1,
       content: "Hi! I saw your profile and I think we'd be a great match for the React project I'm working on.",
@@ -96,11 +79,10 @@ const Messaging = () => {
 
   const handleSendMessage = () => {
     if (!messageInput.trim()) return;
-    // In a real app, this would send the message
     setMessageInput("");
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSendMessage();

@@ -6,16 +6,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Bot, Send, User, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-interface Message {
-  id: number;
-  content: string;
-  isBot: boolean;
-  timestamp: Date;
-  suggestions?: string[];
-}
-
 const AIChat = () => {
-  const [messages, setMessages] = useState<Message[]>([
+  const [messages, setMessages] = useState([
     {
       id: 1,
       content: "Hello! I'm your AI coding partner finder. Tell me what kind of project you're working on, your skill level, and what you're looking for in a coding partner. I'll help you find the perfect match!",
@@ -28,14 +20,14 @@ const AIChat = () => {
   const handleSendMessage = () => {
     if (!inputValue.trim()) return;
 
-    const userMessage: Message = {
+    const userMessage = {
       id: messages.length + 1,
       content: inputValue,
       isBot: false,
       timestamp: new Date(),
     };
 
-    const botResponse: Message = {
+    const botResponse = {
       id: messages.length + 2,
       content: "Based on your requirements, I found some great potential partners! Here are my top recommendations:",
       isBot: true,
@@ -47,7 +39,7 @@ const AIChat = () => {
     setInputValue("");
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSendMessage();

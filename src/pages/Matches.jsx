@@ -8,24 +8,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Heart, MessageSquare, MapPin, Clock, Search, Filter } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-interface Partner {
-  id: number;
-  name: string;
-  title: string;
-  location: string;
-  availability: string;
-  skills: string[];
-  bio: string;
-  matchPercentage: number;
-  avatar?: string;
-}
-
 const Matches = () => {
   const { toast } = useToast();
   const [searchTerm, setSearchTerm] = useState("");
   const [skillFilter, setSkillFilter] = useState("all");
 
-  const partners: Partner[] = [
+  const partners = [
     {
       id: 1,
       name: "Sarah Chen",
@@ -72,14 +60,14 @@ const Matches = () => {
     }
   ];
 
-  const handleLike = (partnerId: number, partnerName: string) => {
+  const handleLike = (partnerId, partnerName) => {
     toast({
       title: "Match Liked!",
       description: `You liked ${partnerName}. They'll be notified of your interest.`,
     });
   };
 
-  const handleMessage = (partnerId: number, partnerName: string) => {
+  const handleMessage = (partnerId, partnerName) => {
     toast({
       title: "Starting Conversation",
       description: `Opening chat with ${partnerName}...`,

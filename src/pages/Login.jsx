@@ -12,7 +12,7 @@ const Login = () => {
   const { toast } = useToast();
   const [rememberMe, setRememberMe] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     toast({
       title: "Login Successful!",
@@ -63,7 +63,7 @@ const Login = () => {
                 <Checkbox 
                   id="remember" 
                   checked={rememberMe}
-                  onCheckedChange={(checked) => setRememberMe(checked as boolean)}
+                  onCheckedChange={(checked) => setRememberMe(checked)}
                 />
                 <Label htmlFor="remember" className="text-sm">
                   Remember me

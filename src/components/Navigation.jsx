@@ -4,7 +4,7 @@ import { Code, Bot, Users, MessageSquare, User } from "lucide-react";
 
 export const Navigation = () => {
   const location = useLocation();
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path) => location.pathname === path;
 
   return (
     <nav className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">

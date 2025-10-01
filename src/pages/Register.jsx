@@ -12,7 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const Register = () => {
   const { toast } = useToast();
-  const [skills, setSkills] = useState<string[]>([]);
+  const [skills, setSkills] = useState([]);
   const [skillInput, setSkillInput] = useState("");
 
   const handleAddSkill = () => {
@@ -22,11 +22,11 @@ const Register = () => {
     }
   };
 
-  const handleRemoveSkill = (skillToRemove: string) => {
+  const handleRemoveSkill = (skillToRemove) => {
     setSkills(skills.filter(skill => skill !== skillToRemove));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     toast({
       title: "Registration Successful!",
