@@ -10,30 +10,30 @@ All colors MUST be HSL. Light theme with teal accents.
   :root {
     /* Core theme colors - Light background */
     --background: 210 20% 98%;
-    --foreground: 222 84% 4.9%;
+    --foreground: 222 47% 11%;
 
     /* Cards and surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     /* Popovers and overlays */
     --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
     /* Primary - Teal */
-    --primary: 173 58% 39%;
+    --primary: 173 80% 40%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Light gray card surface */
     --secondary: 210 40% 96%;
-    --secondary-foreground: 222 84% 4.9%;
+    --secondary-foreground: 222 47% 11%;
 
     /* Muted elements */
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
     /* Accent - Dark teal for hover states */
-    --accent: 173 64% 31%;
+    --accent: 173 85% 32%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive - Red for errors */
@@ -43,11 +43,11 @@ All colors MUST be HSL. Light theme with teal accents.
     /* Borders and inputs */
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 173 58% 39%;
+    --ring: 173 80% 40%;
 
     /* Hero gradient colors */
-    --hero-start: 173 58% 39%;
-    --hero-end: 173 64% 31%;
+    --hero-start: 173 80% 40%;
+    --hero-end: 173 85% 32%;
     
     /* Success color for positive actions */
     --success: 120 60% 50%;
@@ -55,19 +55,19 @@ All colors MUST be HSL. Light theme with teal accents.
 
     /* Warning color */
     --warning: 40 100% 60%;
-    --warning-foreground: 222 84% 4.9%;
+    --warning-foreground: 222 47% 11%;
 
     --radius: 0.75rem;
 
     /* Sidebar colors adapted to light theme */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 222 84% 4.9%;
-    --sidebar-primary: 173 58% 39%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 173 80% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 222 84% 4.9%;
+    --sidebar-accent-foreground: 222 47% 11%;
     --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 173 58% 39%;
+    --sidebar-ring: 173 80% 40%;
   }
 }
 
